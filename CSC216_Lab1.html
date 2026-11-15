@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COM/3415/26 Victor Murimi Mutugi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to My webpage</h1>
+    <!--The first heading-->
+    <div class="view">
+      <!-- The div blocks -->
+      <div class="block">
+        <h2 class="block_heading">Block_1: Introduction & Typography</h2>
+
+        <!-- Utilizing the heading levels -->
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+        <h6>Heading Level 6</h6>
+
+        <!-- Paragraphw demonstrating text formats -->
+        <p>
+          This paragraph demonstrates various text formatting elements. We can
+          apply <b>bold text</b> for visual contrast, or use the
+          <strong>strong tag</strong> to indicate high importance. It is often
+          necessary to <i>italicize</i> specific terms, or provide semantic
+          emphasis using the <em>em tag</em>. The <u>underline</u> tag can
+          highlight specific phrases. Finally, we can use subscripts for
+          formulas like H<sub>2</sub>O, and superscripts for units like
+          cm<sup>3</sup>.
+        </p>
+      </div>
+      <div class="block" id="block2">
+        <h2 class="block_heading">Block_2: Links and Lists</h2>
+
+        <!-- Internal and External Links -->
+        <h3>Navigation</h3>
+        <p>
+          Visit this external link to my
+          <a href="https://mg-studios01.itch.io" target="_blank">Itch.io </a
+          >page, or use this internal link to jump down to the
+          <a href="#block5">HTML</a> Form.
+        </p>
+
+        <!-- Unordered Lists with CSS list-style-type -->
+        <h3>Unordered Lists</h3>
+        <ul style="list-style-type: disc">
+          <li>Default disc bullet</li>
+        </ul>
+        <ul style="list-style-type: circle">
+          <li>Circle bullet style</li>
+        </ul>
+        <ul style="list-style-type: square">
+          <li>Square bullet style</li>
+        </ul>
+
+        <!-- Ordered Lists with HTML type attribute -->
+        <h3>Ordered Lists</h3>
+        <ol type="1">
+          <li>Standard numbering (Type 1)</li>
+        </ol>
+        <ol type="A">
+          <li>Uppercase alphabetical (Type A)</li>
+        </ol>
+        <ol type="a">
+          <li>Lowercase alphabetical (Type a)</li>
+        </ol>
+        <ol type="I">
+          <li>Uppercase Roman numerals (Type I)</li>
+        </ol>
+        <ol type="i">
+          <li>Lowercase Roman numerals (Type i)</li>
+        </ol>
+      </div>
+      <div class="block">
+        <h2 class="block_heading">Block_3: Multimedia Showcase</h2>
+
+        <!-- Images (PNG & JPG) -->
+        <h3>Images</h3>
+        <p>PNG Image Example:</p>
+        <img src="media/image.png" alt="Sample PNG Image" width="200" />
+
+        <p>JPG Image Example:</p>
+        <img src="media/image.jpg" alt="Sample JPG Image" width="200" />
+
+        <!-- Audio Element -->
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="media/audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video Element -->
+        <h3>Video</h3>
+        <video controls width="300">
+          <source src="media/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="block">
+        <h2 class="block_heading">
+          Block_4: HTML Entities and Escape Sequences
+        </h2>
+
+        <!-- Demonstrating special characters -->
+        <p>
+          Here is a demonstration of the required HTML entities[cite: 1]:<br />
+          Less than: &lt; <br />
+          Greater than: &gt; <br />
+          Double quotation: &quot; <br />
+          Non-breaking&nbsp;space (between these words)<br />
+          Ampersand: &amp; <br />
+          Apostrophe: &apos; <br />
+          Euro symbol: &euro; <br />
+          Copyright: &copy; 2026
+        </p>
+      </div>
+      <div class="block" id="block5">
+        <h2 class="block_heading">Block_5: User Interaction Form</h2>
+
+        <!-- Form with a defined action attribute -->
+        <form action="/submit-data" method="POST">
+          <!-- Text input -->
+          <label for="fullName">Full Name:</label><br />
+          <input type="text" id="fullName" name="fullName" /><br /><br />
+
+          <!-- Drop-down selection -->
+          <label for="department">Department:</label><br />
+          <select id="department" name="department">
+            <option value="computer_science">Computer Science</option>
+            <option value="biochemistry">Biochemistry</option>
+            <option value="engineering">Engineering</option></select
+          ><br /><br />
+
+          <!-- Radio buttons -->
+          <p>Preferred Contact Method:</p>
+          <input type="radio" id="emailContact" name="contact" value="email" />
+          <label for="emailContact">Email</label><br />
+          <input type="radio" id="phoneContact" name="contact" value="phone" />
+          <label for="phoneContact">Phone</label><br /><br />
+
+          <!-- Check boxes -->
+          <p>Select your interests:</p>
+          <input
+            type="checkbox"
+            id="gameDev"
+            name="interests"
+            value="game_design"
+          />
+          <label for="gameDev">Game Development</label><br />
+          <input
+            type="checkbox"
+            id="graphicDesign"
+            name="interests"
+            value="graphic_design"
+          />
+          <label for="graphicDesign">Graphic Design</label><br />
+          <input
+            type="checkbox"
+            id="science"
+            name="interests"
+            value="Full-stack developer"
+          />
+          <label for="science">Full-stack developer</label><br /><br />
+
+          <!-- Text area -->
+          <label for="comments">Additional Comments:</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="40"></textarea
+          ><br /><br />
+
+          <!-- Submit button -->
+          <button type="submit">Submit Information</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
